@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* 초기화 */
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none; /*글머리기호 없애기*/
+}
+body {
+	font-family: "맑은 고딕", sans-serif;
+	
+}
+/* 헤더 영역 */
+#header {
+	height: 150px;
+	width:960px;
+	margin: 0 auto;
+}
+#header .logo {
+	float: left;
+	height: 100px;
+	padding-top: 30px;
+}
+.logo img {
+	width:250px;
+}
+nav {
+	float: right;
+}
+nav > ul {
+	width: 600px;
+	padding-top: 80px;
+}
+.dropdown {
+	float: left;
+	width:200px;
+	text-align: center;
+}
+.dropdown > a {
+	display: block; /*부모공간의 전체를 차지*/
+	text-align: center;
+	padding: 14px; 16px;
+}
+.dropdown > a:hover, .dropdown:hover .dropbtn {
+	background-color: #7b422e;
+	color: #fff;
+}
+.dropdown:hover .dropdown-content { /*hover했을때 하위 메뉴가 나올수 있도록함 */
+	display: block;
+}
+.dropdown-content {
+	display:none;
+	width: 200px;
+	position: absolute; /*위치값이 없으면 그 위치에 그대로 있게됨 (부모영역에 position을 주지 않아도 됨) */
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+	z-index: 10; /*레이어 순서 높은게 앞으로 온다.*/
+}
+.dropdown-content a {
+	display: block;
+	text-align: center;
+	padding: 12px 16px;
+}
+.dropdown-content a:hover {
+	background-color: #bb692d;
+	color: #fff;
+}
+/*메인 이미지 영역*/
+#mainImage {
+	height: 400px;
+	position: relative;
+	width:960px;
+	margin: 0 auto;
+}
+.imgs {
+	height: 400px;
+	position: absolute;
+}
+.imgs > img {
+	width: 100%;
+}
+.welcome {
+	position: absolute;
+	left:50%;
+	top:50%;
+	width: 300px;
+	height: 100px;
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 10px;
+	text-align: center;
+	margin: -50px 0 0 -150px; 
+	/*영역 크기의 넣ㅂ이와 높이 반 만큼 마이너스 여백을 주면 정 가운데로 온다!*/
+	line-height: 50px;
+}
+.welcome > h2 {
+	color: #BB692D;
+	font-size: 2em;
+}
+.welcome > h3 {
+	color: #6a6a6a;
+}
+
+/*메인 컨텐츠 영역*/
+#contents {
+	width:960px;
+	margin: 0 auto;
+}
+.notice {
+	width: 480px;
+	float: left;
+	margin-top: 20px;
+}
+.notice > h2 {
+	text-align: center;
+	border-bottom: 1px solid #666;
+	padding-bottom: 10px;
+}
+.notice > table {
+	font-size: 0.9em;
+	color: #666;
+	width: 430px;
+	border-collapse: collapse; 
+	margin-left: 20px;
+	/*border스타일 바꾸기(html에 border를 쓰면 collapse은 실선으로 나오고 html에 border를 안쓰면 선영역이 사라져 배경색으로 채워짐)*/
+}
+.notice > table tr> th { /*tbody가 저절로 생김 그래서 tr은 후손이 됨*/
+	padding: 5px 0;
+}
+.notice > table tr > td {
+	padding: 5px;
+	
+}
+.notice > table tr:nth-child(2n) {
+	background-color: rgba(153,153,102,0.5);
+}
+.partner {
+	width: 480px;
+	float: right;
+	margin-top: 20px;
+}
+.partner > h2 {
+	text-align: center;
+}
+.partner_info {
+	margin-top: 10px;
+	padding-left: 20%;
+}
+.icons {
+	padding-top: 20px;
+	clear: both; /*clear는 float속성을 해제한다.*/
+	text-align: center;
+}
+.btn {
+	display: inline-block;
+	width: 160px;
+	margin: 0 20px;
+}
+.btn img {
+	width: 150px;
+}
+.btn button {
+	background-color: #BB692D;
+	padding: 0 8px;
+	border: none;
+	font-size: 1.2em;
+	border-radius: 8px;
+	color: #fff;
+	height: 40px;
+}
+.btn > button:hover {
+	background-color: #99cc66;
+	cursor: pointer; 
+	/*button태그 부분에 마우스를 올리면 손모양으로 커서 모양을 바꾼다.*/
+}
+#footer {
+	height:150px;
+	margin-top: 30px;
+	background-color: #BB692D;
+	padding:  10px 20px;
+}
+.footerContent {
+	width:960px;
+	margin: 0 auto;
+	
+}
+#footer ul {
+	float: left;
+}
+#footer li {
+	float: left;
+	padding: 30px 20px 0 0;
+}
+#footer a {
+	color: #fff;
+}
+#footer address {
+	float: right;
+	font-style: normal; 
+	font-size: 0.8em;
+	padding-right: 150px;
+	color: #fff;
+}
+
+

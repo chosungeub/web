@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<!--에니메이션-->
+		
+	
+		<style> 
+			@keyframes abc{
+				0%{
+					background-color: red;
+				}
+				100%{
+					background-color: blue;
+				}				
+			
+			}
+			div {
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				animation: abc 3s ease 1s 4;/*이름 시간 효과 지연시간 반복(infinite-무한)*/
+				animation-direction: alternate; /*역방향으로 재생*/
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

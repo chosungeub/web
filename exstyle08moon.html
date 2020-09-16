@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<!--응용 선택자 문제-->
+		<style> 
+		input:checked + div { 
+			/*input태그가 checked가 되어 있으면 input태그의 인접한 형제 태그인 div태그에 높이를 0px로 스타일을 적용하라는 뜻*/
+		 	height:0px;
+		 }
+		div{ /*border로 영역을 확인하고 지운다.*/
+			overflow:hidden;
+		 	width:400px;
+		 	height:300px;
+		 	transition-duration: 1s; /*응용: transition은 전환효과 duration은 지속효과 1s 1초 */
+		 }
+		</style>
+	</head>
+	<body>
+		<input type="checkbox" />뉴스 감추기 
+		<div>
+			<h1>삼성 이상민,첫 1군 승격</h1>
+			<p>삼성은 25일 대구삼성라이온즈파크에서 열리는 LG와의 홈경기를 앞두고 이상민을 콜업했다. 삼성은 콜업에 앞서 24일 KBO에 
+				선수 등록 공시를 요청했다. 등번호 111에서 68로 변경됐다. </p>
+			<p>경북고-동의대 출신 좌완 이상민은 지난해 11월 키움의 보류선수 명단에서 제외된 뒤 입단 테스트를 거쳐 삼성의 새 식구가 됐다. </p>
+		</div>
+	</body>
+</html>

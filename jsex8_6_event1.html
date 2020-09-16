@@ -1,0 +1,20 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<script> //event 특정한 동작_예제: 제목글 클릭 할 때마다 경고창 뜨게하기
+			window.onload=function() {
+				var header=document.getElementById('header');
+				header.onclick=function(){
+					alert('안녕하세요');
+				}; //자바스크립트의 변수선언은 항상 ;붙이고, 한명령이 끝나는 중괄호에도 {}; 을 붙인다.(에러는 안남)
+			};
+		</script>
+	</head>
+	<body>
+		<h1 id="header">자바스크립트 수업</h1>
+	</body> 
+</html>

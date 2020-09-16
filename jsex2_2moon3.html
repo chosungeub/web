@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<script> //문.prompt로 숫자를 입력받아 짝수면 '짝수입니다' 홀수면'홀수입니다' 숫자가 아니면 '숫자가 아닙니다' (switch문을 이용)
+			var input=prompt("숫자을 입력하세요","0");
+			
+			switch (input%2) {
+				case 0:
+					alert('짝수입니다');
+					break;
+				case 1:
+					alert('홀수입니다');
+					break;
+				default:
+					alert('숫자가아닙니다');
+					break;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>자바스크립트 문법</h1>
+		
+	</body> 
+</html>

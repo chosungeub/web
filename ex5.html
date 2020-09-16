@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> <!-- 한글을 incoding해서 깨지지 않게 보여주는 기술을 입력 -->
+		
+		<title>길동홍</title> <!-- 제목 / 탭 이름 등에 표기됨 -->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--모바일용 
+			content="width=device-width 콘텐츠 크기를 모바일 넓이에 맞게 하겠다.-->
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		
+	</head>
+	<body>
+		<!--테이블 태그: 자료를 정리해서 보여주는 용도. 워드의 표작업을 대체-->
+		<!--border: 표의 테두리 표시-->
+		<h1>비상 연락망</h1>
+		<table border="1">
+			<tr><!--행을 말함 table row-->
+				<th>이름</th><th>전화번호</th><th>이메일</th><th>기타</th>
+			</tr>
+			<tr><!--행을 더 만들고 싶으면 반복한다.--><!--table date-->
+				<td>홍길동</td><td>010-7777-8888</td><td>hong@naver.com</td><td>회장</td>
+			</tr>
+			<tr>
+				<td>김철수</td><td>010-2222-4444</td><td>kimcs@daum.net</td><!--윗 열에 있던게 아랫 열에 없으면 이상하게 보인다.-->
+			</tr>
+			<tr>
+				<td>이영희</td><td>010-5741-1234</td><td>younghee@daum.net</td>
+			</tr>
+			
+			
+		<table border="1">
+			<caption>비상 연락망</caption><!--caption 한글과 기능 같음-->
+			<tr>
+				<th>이름</th><th>전화번호</th><th>이메일</th><th>기타</th>
+			</tr>
+			<tr>
+				<td>홍길동</td><td>010-7777-8888</td><td>hong@naver.com</td><td>회장</td>
+			</tr>
+			<tr>
+				<td>김철수</td><td>010-2222-4444</td><td>kimcs@daum.net</td><td rowspan="2">없음</td><!--rowspan="2"응 두개의 행을 합친다는 뜻이다.-->
+			</tr>
+			<tr>
+				<td>이영희</td><td>010-5741-1234</td><td>younghee@daum.net</td>
+			</tr>
+			<tr><!--열 병합-->
+				<td colspan="4">※회비는 매월 20일에 납부합니다.</td>
+			</tr>
+		</table>
+		<h1>월간 식단표</h1>
+		<table border="1">
+			<tr>
+				<td>시간</td><td>월~화</td><td>수</td><td>목~금</td><td>기타</td>
+			</tr>
+			<tr>
+				<td>아침</td><td>콩나물국</td><td>비빔밥</td><td>순대국</td><td rowspan="3">시간준수</td>
+			</tr>
+			<tr>
+				<td>점심</td><td colspan="3">국수</td>
+			</tr>
+			<tr>
+				<td>저녁</td><td>김치찌개</td><td>된장찌개</td><td>부대찌개</td>
+			</tr>
+			
+		</table>
+	</body> 
+</html>

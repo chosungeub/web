@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<script> //dom 삭제
+			window.onload=function() {
+				var head1=document.getElementById('header1'); 
+				//getElementById('header1')id가 header1인 것의 태그의 정보를 가지고와서 라는 뜻
+				var head2=document.getElementById('header2')
+				head1.innerHTML='흐리고 비가 옵니다.'; //innerHTML은 속성이름으로서 태그의 내부를 의미함, 
+				head2.innerHTML='수요일 입니다.';  
+				//head1.innerHTML은 head1 안에 있는 문자를 말함
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id="header1">오늘의 날씨는?</h1>
+		<h1 id="header2">오늘은 무슨 요일?</h1>
+	</body> 
+</html>

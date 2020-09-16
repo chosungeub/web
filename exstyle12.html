@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<!--선택자에 대해서...응용 선택자: first 첫글자, 첫줄만 바꾸는 선택자 -->
+		<style> 
+			p:first-letter {
+				font-size: 40px; /*font-size는 글꼴 이후에 더 다세히..*/
+			}
+			p:first-line {
+				color: red; 
+			}
+			p::selection {/*사용자가 글자를 드레그 하면 표시되는 배경색과 글자색*/
+				background-color: yellow;
+				color: green;
+			}
+		</style>
+	</head>
+	<body><!--h1태그는 기본값이 32px, p태그는 기본값 16px-->
+		<p>이승우는 전반 초반 날카로운 슈팅을 하였으나, 아쉽게 빗나갔다. 전반 22분에는 패널티지역 안에서 상대 선수에게 걸려 넘어졌다. 그러나 주심은 오히려 이승우에게 옐로카드를 주었다. 이 상황에서 벨기에 현지 기자들의 의견이 나뉘었다.</p>
+	</body>
+</html>

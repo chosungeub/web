@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<script> 
+			// 내장함수
+			// clearTimeout(id);  clearInterval(id); 으로 setTimeout이나 setInterval을 끝내는 함수
+			// 
+			setTimeout (function(){ //함수자체를 변수에 넣을수 있음 객체변수의 개념
+				alert("10초가 지났습니다. ㅋㅋ")
+			}, 10000); 
+			function stop () {
+			  	clearTimeout(s);
+			}
+		</script>
+		<style>
+			h1:hover {
+				cursor:pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 onclick="stop();">자바스크립트 문법</h1>
+	</body> 
+</html>

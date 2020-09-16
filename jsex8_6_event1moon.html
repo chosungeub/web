@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<script> //event 특정한 동작_문제: 클릭할때마다 투표수 올라가게 만들기
+			window.onload=function() {
+				var btn1=document.getElementById('btn-1');
+				var btn2=document.getElementById('btn-2');
+				var count1=document.getElementById('count-1');
+				var count2=document.getElementById('count-2');
+				
+				var vote=0;
+				
+				btn1.onclick=function(){
+					vote++;
+					count1.innerHTML=vote;
+				};
+				btn2.onclick=function(){
+					count2.innerHTML=Number(count2.innerHTML)+1;
+					// btn1.onclick(); 홍길동이 반드시 김철수를 이기는 법
+				};
+			
+			}
+		</script>
+	</head>
+	<body>
+		<button id="btn-1">김철수투표</button>
+		<button id="btn-2">홍길동투표</button>
+		<h1>김철수 - <span id="count-1">0</span></h1>
+		<h1>홍길동 - <span id="count-2">0</span></h1>
+	</body> 
+</html>

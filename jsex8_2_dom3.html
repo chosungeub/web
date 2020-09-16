@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<script> //jsex8_2_dom2의 응용
+			window.onload=function() {
+				var date=new Date();
+				var hour=date.getHours();
+				var output='';
+				if(hour<16){
+					output+='<ul>';
+					output+='<li>김치찌개</li>';
+					output+='<li>된장찌개</li>';
+					output+='<li>칼국수</li>';
+					output+='</ul>';
+				}else {
+					output+='<ul>';
+					output+='<li>후라이드</li>';
+					output+='<li>양념</li>';
+					output+='<li>골뱅이무침</li>';
+					output+='<li>마른안주</li>';
+					output+='</ul>';
+				}
+				document.body.innerHTML+=output;
+				
+			}
+		</script>
+	</head>
+	<body>
+		<h1>자바스크립트 수업</h1>
+	</body> 
+</html>

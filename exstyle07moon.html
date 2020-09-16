@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<!--응용 선택자 문제-->
+		<style> 
+		div{/*크기를 주지 않으면 자식 영역의 크기가 할당된다.= 블록레벨요소처럼 <-> 인라인 레벨 요소 */
+				width:400px;
+				height:200px;/*p태그의 글씨가 삐져나온다. 자식이기는 부모없다고 부모영역을 무시하고 자식은 나오기도 함.*/
+				border:1px solid red;
+				overflow:hidden;/*부모영역안으로 자식이 들어가 넘치는 부분은 hidden 안보임 scroll은 스크롤이 생겨 볼수 있음*/
+		}/*스타일로 블록 레벨요소를 인라인 레벨요소로 바꿀 수 있음*/
+		</style>
+	</head>
+	<body>
+		<input type="checkbox" />뉴스 보기 
+		<div><!--이곳에 영역을 잡는 이유? 위 스타일에서 div 태그의 스타일로 크기를 설정해주면 그 안으로 블록영역태그인 h1, p태그들이 들어온다.-->
+			<h1>삼성 이상민,첫 1군 승격</h1>
+			<p>삼성은 25일 대구삼성라이온즈파크에서 열리는 LG와의 홈경기를 앞두고 이상민을 콜업했다. 삼성은 콜업에 앞서 24일 KBO에 
+				선수 등록 공시를 요청했다. 등번호 111에서 68로 변경됐다. </p>
+			<p>경북고-동의대 출신 좌완 이상민은 지난해 11월 키움의 보류선수 명단에서 제외된 뒤 입단 테스트를 거쳐 삼성의 새 식구가 됐다. </p>
+		</div>
+	</body>
+</html>

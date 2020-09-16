@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<script> //문. alert로 홍길동의 성적표 국어: 90, 영어:82, 수학: 76, 과학:88
+				
+			var student={
+				이름:'조성은',
+				국어: 90, 영어:82,
+				수학: 76, 과학:88
+			};
+			
+			var output='';
+			with(student){
+				output+=이름+'의 성적표\n';
+				output+='국어:'+국어+'\n';
+				output+='영어:'+영어+'\n';
+				output+='수학:'+수학+'\n';
+				output+='과학:'+과학+'\n';
+				output+='총점:'+(국어+영어+수학+과학)+'\n';
+				output+='평균:'+(국어+영어+수학+과학)/4;
+			}
+			alert(output);
+			
+		</script>
+	</head>
+	<body>
+		<h1>자바스크립트 수업중...</h1>
+	</body> 
+</html>

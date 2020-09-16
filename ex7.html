@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> <!-- 한글을 incoding해서 깨지지 않게 보여주는 기술을 입력 -->
+		
+		<title>길동홍</title> <!-- 제목 / 탭 이름 등에 표기됨 -->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--모바일용 
+			content="width=device-width 콘텐츠 크기를 모바일 넓이에 맞게 하겠다.-->
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		
+	</head>
+	<body>
+		<h2>메뉴 선택</h2>
+		<select> <!--select태그는 스크롤 창을 만듬-->
+			<option>김치찌개</option>
+			<option>칼국수</option>
+			<option>된장찌개</option>
+			<option>비빕밥</option>
+			<option>냉면</option>
+		</select>
+		
+		<h2>수강과목 선택</h2><!--input태그로 select태그와 비슷한 기능만들기-->
+		<input type="text" list="choice"/>
+		<datalist id="choice">
+			<option value="grammer" label="문법"></option>
+			<option value="voca" label="어휘"></option>
+			<option value="speaking" label="회화"></option>
+			<option value="listening" label="리스닝"></option>
+			<option value="news" label="뉴스청취"></option>
+			<!--select와 같이 스크롤이 만들어지며 텍스트를 첫글자로 자동완성기능까지 추가됨 
+				lable은 value의 설명글이 붙어 목록에 보이게 함 / lable값은 입력되지 않음-->
+		</datalist>
+		<h3>메모장</h3>
+		<textarea cols="60" rows="10"></textarea><br /><!--여러줄 입력가능한 창이 생성됨 
+			 cols="60" 60자 rows="10" 10줄 의 크기, 그 이상 치면 스크롤이 생김-->
+		<button>전송하기</button> <br /><!--intput type="sumit" 변수와 같은 기능을 넣을 수 있음-->
+		
+		현재 진행률 50%<progress value="50" max="100"></progress><br /><!--진행정도를 그림으로 보여줌-->
+		
+		사용량 78%<meter min="0" max="100" value="78"></meter><!--progress와 비슷한 효과지만 반드시 min와 max 속성값을 지정해주어야 함-->
+	</body> 
+</html>

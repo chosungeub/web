@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<!--본격적인 글자 장식-->
+		
+		<style> 
+			h1 {/*underline, overline 둘다 밑줄 */
+				text-decoration: underline; 
+			}
+			h2>span{/* blink 깜박임, line-through 취소선(만일 정가:25,000원 텍스트 부분만 적용하고 싶다면? span태그 사용)*/
+				text-decoration: line-through;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>오늘부터 오전 4시간 (9월 2일까지)</h1>
+		<h2>가나다라(<span>정가:25,000원</span>-세일가18,000)</h2>
+		<audio controls autoplays><!--autoplays은 오디오자동실행, 크롬은 접근성때문에 막아놓는 기능, utoplays지우면 자동재상 안하는거, loop는 반복기능-->
+		<!--<audio src="media/bgsound.mp3" controls></audio>
+		controls음악을 중재 / mp3와 ogg확장가 많이 쓰임 
+		/mp3는 스파이어폭스 오페라 등에서는 지원 안함, 브라우져 버전에 따라서도 제공 안될수 있음.
+		그래서 ogg랑 같이씀 / 크롬은 다 됨. 아래와 같이 두줄을 써놓으면 모든 브라우져에서 재생 가능해짐-->
+			<source src="media/bgsound.mp3" type="audio/mp3"></source>
+			<source src="media/bgsound.ogg" type="audio/ogg"></source>
+		</audio>
+		</audio>
+		<video controls> <!--비디오를 재생하는 태그-->
+			<source src="media/Painting.mp4" type="video/mp4"></source>
+			<source src="media/Painting.webm" type="video/webm></source>
+		</video>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<script> //dom의 스타일
+			window.onload=function() {
+				var h=document.getElementByID("header");
+				h.style.color='red';//따옴표를 안하면 변수로 인식,
+				//html과 css와 다르게 javascript로 넘어오면서 언어의 틀을 갖추었기에 
+				//변수의 개념이 생겼고 값과 변수를 구분하기 위해 ''를 쓴다.
+				h.style.border='2px solid blue';
+				h.style.fontFamily='궁서체';
+				h.style.backgroundColor='yellow';
+				//style에서는 font-family라는 이름의 속성값인데, 자바스크립트에서는 -는 연산자이기 때문에 fontFamily으로 바꾼다.
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id="header">오늘의 날씨는?</h1>
+	</body> 
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<!--선택자에 대해서...클래스 선택자-->
+		<style>
+		  #target { /*아이디 선택자*/
+				color:yellow;
+				background-color: green;
+			}
+			.ctxt{/*클래스 선택자는  .을 찍고 클래스 이름을 쓴다.*/
+				color:blue;
+			}
+			.bor{/*border는 테두리 1px굵기, solid 실선 red는 색깔*/
+				border:1px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="target">css3의 선택자 공부</h1>
+		<p class="ctxt bor">어디를 꾸며 줄까?하는 고민의 대상이 되는 부분</p><!--클래스는 이름은 여러개가 될수 있음-->
+		<ul>
+			<li>태그 선택자</li>
+			<li class="ctxt">아이디 선택자</li>
+			<li>클래스 선택자</li><!--클래스는 중복이 가능, 같은 스타일을 주고 싶은 다른 태그들에 적용가능 함-->
+			<li>전체 선택자</li>
+		</ul>
+		<h1>자바스트립트</h1>
+		<p>정적인 홈페이지를 동적으로 만들어주는 기능</p>
+	</body>
+</html>

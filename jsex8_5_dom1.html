@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<script> //dom의 문서 객체 제거 (장바구니 비우기 등과 같은 기능)
+			window.onload=function() {
+				var willRemove=document.getElementById('will-remove');
+				document.body.removeChild(willRemove); //removeChild 부모자식과의 관계가 사라짐
+			}
+		</script>
+	</head>
+	<body>
+		<h1>자바스크립트 수업</h1>
+		<h1 id="will-remove">내가 제거됩니다.</h1>
+	</body> 
+</html>

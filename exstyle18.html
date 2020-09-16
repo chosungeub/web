@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<!--전후 문자 선택자, 선택자의 우선순위-->
+		<!--태그(id), 클래스 순으로 우선순위가 있다.-->
+		<style> 
+			h1:before {
+				content: "우한 ";
+				color: green;
+			}
+			h1:after {
+				content: " 박멸!!";
+				color: #0000FF;
+			}
+			.area > p{
+				color:green!important; /*태그 id 선택자 보다 우선순위에 밀렸던 클래스이름 선택자가 !important를 뭍여 최우선 순위가 됨*/
+			}
+			#txt {
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>코로나</h1>
+		<div class="area"> <!--보통 영역은 id로 이름을 주고,태그 단위는 class는 로 이름을 쓴다.-->
+			<p id="txt">오늘은 수요일</p>
+		</div>
+	</body>
+</html>

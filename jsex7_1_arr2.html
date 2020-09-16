@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<script> //영문으로 객체 안의 속성이름을 주기
+			var person={
+				name: '조성은',
+				eat:function(food) {
+					alert(this.name+'이 '+food+'를(을) 먹습니다.')
+					//alert(person.name+'이 '+food+'를(을) 먹습니다.')과 동일 
+				}
+			};
+			person.eat('국수'); // 속성값에 함수를 넣을수 있다. (동적)
+		</script>
+	</head>
+	<body>
+		<h1>자바스크립트 수업중...</h1>
+	</body> 
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<script> // 코딩테스트문. 정삼각형 * 을 찍으시오
+			var output="";
+			var count=0;
+			for(var i=1; i<=10; i++) {
+				for(var a=1; a<=(10-count); a++){
+					output+=" ";
+					}
+				for(var j=1; j<=(i+count); j++) {	
+					output+="*";
+				}
+				count++;
+				output+="\n";
+			}
+			alert(output);
+		</script>
+	</head>
+	<body>
+		<h1>자바스크립트 문법</h1>
+	</body> 
+</html>

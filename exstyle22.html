@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<!--본격적인 글자 장식 font-style, -->
+		<style> 
+			h1 {
+				font-style: italic; /*글자 기울이기, italic대신 normal을 쓰면 기울여 있던 폰트도 세울수 있음*/
+			}
+			.area {
+				width: 400px; 
+				border: 1px solid;
+			}
+			.left {/*text-align 글자정렬 */
+				text-align: left;
+			}
+			.center {
+				text-align: center;
+			}
+			.right {
+				text-align: right;
+			}
+			a {
+				display: block;
+			}
+			.just {
+				text-align: justify; /*양쪽 정렬*/
+				line-height: 1.6;/*줄간격 em을 쓰지 않고 160%는 1.6 으로 표시*/
+				text-indent: 1em; /*들여쓰기, lem은 글자 하나 만큼의 길이를 말함*/
+			}
+			.sp { 
+				letter-spacing: 0.1em; /*글자 간격-자간 em 단위를 많이 씀*/
+				word-spacing: 0.3em/*단어와 단어사이를 띄기*/
+			}	
+		</style>
+	</head>
+	<body>
+		<h1>스타일로 홈페이지 꾸미기</h1>
+		<div class="area">
+			<p class="left">대한민국</p>
+			<p class="center">중국</p>
+			<p class="right">일본</p><!--블록레벨요소는 자신의 넓이가 부모영역 안에서의 행 전체를 차지하기 때문에 정렬이 가능하나, 
+				a태그와 같이 자신의 영역만 차지하는 인라인 태그는 같은 방법으로 정렬할 수 없다. 그래서 인라인요소태그를 블록요소태그로 바꾸어 처리한다. -->
+			<a class="center" href="http://www.kbs.co.kr">한국방송</a>
+			<p class="just">메시는 2005년 바르셀로나 B팀에서 1군 합류 뒤에 15년 동안 바르셀로나에서 활약했다. 에이스를 상징하는 등번호 10번을 달고 유럽 축구를 호령했고, 유럽축구연맹(UEFA) 챔피언스리그를 포함한 굵직한 대회에서 존재감을 뽐냈다.</p>
+		</div>
+		<h1 class="sp">대한민국 국민 모두 파이팅</h1>
+	</body>
+</html>

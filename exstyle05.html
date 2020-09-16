@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<!--선택자에 대해서...응용 선택자: 자식선택자와 후손선택자, 
+			블럭레벨요소 인라인 레벨요소를 구분해서 적용하는 기법, 속성 display float position 이렇게 총 4개가 가장 응용하기 힘듬-->
+			<!--부모와 자식은 '부모>자식' 기호를 씀, 후손(자식을 포함한 모든 후손)선택자는 '부모 후손'한칸띈 표기를 함-->
+			<!--기본선택자 80, 응용 20 비율-->
+		<style> /* :(콜론)뒤는 절때 띄지 않는다.*/
+			#target > h1{/* 자식 태그를 첮아<h1>자바스트립트</h1> 에 스타일이 변한다*/
+				color:red;
+			}
+			#study h1{/* 후손 선택자이기 때문에 자식인 <h1>css3의 선택자 공부</h1>가 아니라 
+				<h1>나는 누구일까?</h1>의 스타일이 변한다. 
+				※ 클래스 선택자나 아이디 선택자처럼 일일히 클래스 이름이나 아이디를 설정하지 않아 효율적으로 처리할 수 있음*/
+				color:blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="study"><!--영역을 묶을 때 많이 쓰임-->
+			<h1>css3의 선택자 공부</h1>
+			<p>어디를 꾸며 줄까?하는 고민의 대상이 되는 부분</p>
+			<ul>
+				<li>태그 선택자</li>
+				<li>아이디 선택자</li>
+				<li>클래스 선택자</li>
+				<li>전체 선택자</li>
+			</ul>
+			<div>
+				<h1>나는 누구일까?</h1>
+			</div>
+		</div>
+		
+		<div id="target">
+			<h1>자바스트립트</h1>
+			<p>정적인 홈페이지를 동적으로 만들어주는 기능</p>
+		</div>
+	</body>
+</html>

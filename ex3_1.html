@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> <!-- 한글을 incoding해서 깨지지 않게 보여주는 기술을 입력 -->
+		
+		<title>길동홍</title> <!-- 제목 / 탭 이름 등에 표기됨 -->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--모바일용 
+			content="width=device-width 콘텐츠 크기를 모바일 넓이에 맞게 하겠다.-->
+		<link rel="shortcut icon" href="images/8.ico" /> <!--favicon: 가장 왼쪽에 보이는 작은 아이콘(로고 등) link rel 링크 연결하겠습니다.
+			favicon은 일러나 포토샵으로 만들수 없음 전용pg이나 웹으로 만들 수 있음(https://convertico.com/) .ico 확장자 image 폴더에 복사해 붙여놓으면 됨-->
+		
+	</head><!--시맨틱 태그 대신 요즘 많이쓰는 태그-->
+	
+		<body><!--해더, 콘텐트, 포터 로 나뉘는 웹페이지-->
+			<p>우리 모두 <strong>코로나</strong> 예방에 최선을 다합니다.</p>
+		
+			<p>우리 모두 <mark>코로나</mark> 예방에 최선을 다합니다.</p> <!--<marker>마커 태그: 형광펜효과-->	
+			<!--div태그와span태그는 자주쓰임-->
+			<!--div태그는 블럭 영역이고span태그는 인라인영역임-->
+			<span>대한민국</span><span>화이팅</span>  <br />
+			<!--h태그나p태그는 width로 자동설정되어 한줄 영역을 차지(block 영역) 하지만 span은 인라인으로 자신의 영역만 차지하는 태그이다.-->
+			<ruby>Hello<rt>핼로우</rt></ruby><!--<ruby>는 실제 글씨 <rt>주석처럼 설명글 달기-->
+			<a href="http://www.kbs.co.kr">한국방송</a> <!--a 앵커태그: 즉시 링크를 걸어 원하는 곳으로 이동하는 태그--><!--href 참조하는 속성-->
+			<a href="http://www.imbc.com">
+				<img src="images/tomato.jpg" alt="토마토">				
+			</a><!--a 앵커태그 사이에 img 태그를 넣어 그림에 링크를 삽입한다.-->
+			<a href="http://www.kbs.co.kr" target="_self">한국방송</a> <!--새창이 아닌 기존의 창에서 뜨는게target속성의  _self-->
+			<a href="http://www.kbs.co.kr" target="_blank">한국방송</a> <!--새창에서 뜨는게target속성의  _blank-->
+			<a href="ex1.html">스포츠</a> <!--제휴 사이트나 내부 페이지를 연동할 때도 유용하게 쓰인다.-->
+		</body> 
+</html>

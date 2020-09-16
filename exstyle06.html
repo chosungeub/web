@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" /> 
+		<title>길동홍</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+		<link rel="shortcut icon" href="images/8.ico" /> 
+		<!--선택자에 대해서...응용 선택자: 형제선택자-->
+		<style> 
+		h1 ~ p {/*같은 들여쓰기 라인 안에 있는 형제 태그들 중에서 h1부터 p태그까지 스타일 적용, 
+			물결 (~) 을 플러스 (+) 로 바꾸어 쓰면 h1과 가자 인접한 p태그 하나만 스타일이 적용 됨*/
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>코로나 예방법</h1>
+		<p>마스크를 꼭 착용한다.</p>
+		<p>외출후에는 꼭 손을 씻는다.</p>
+		<p>2미터 거리두기를 지킨다.</p>
+		<input type="checkbox" checked />독서 <!--checked속성은 체크되어 있는 것을 기본으로 함-->
+		<input type="checkbox"/>여행
+	</body>
+</html>
